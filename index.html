@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DTCG Token Visualizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside id="sidebar">
+    <header class="sidebar-header">
+      <h1>Design Tokens</h1>
+      <p class="repo-link">
+        <a id="repoLink" href="https://github.com/Buydens/tokens_DTCG/blob/main/tokens.dtcg.json" target="_blank" rel="noopener">tokens.dtcg.json</a>
+      </p>
+      <div class="freshness">
+        <div id="lastCommit" class="meta">Loading…</div>
+        <button id="refreshBtn" type="button" title="Re-fetch the latest tokens">Refresh</button>
+      </div>
+    </header>
+    <nav id="nav"></nav>
+  </aside>
+  <main id="main">
+    <div id="status" class="status">Loading tokens…</div>
+    <div id="content"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
